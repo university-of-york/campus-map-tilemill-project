@@ -1,0 +1,429 @@
+{
+  "bounds": [
+    -1.1519,
+    53.9174,
+    -1.003,
+    54.0068
+  ],
+  "center": [
+    -1.0387,
+    53.9473,
+    14
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 13,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "roads.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.2291093999999998,
+        53.8700644,
+        -0.9018984,
+        54.0597974
+      ],
+      "id": "points-fill",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_pois_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "points-fill"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.237973299999993,
+        53.86226830000001,
+        -0.8183278000000086,
+        54.244200199999995
+      ],
+      "id": "landuse",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_landuse_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "landuse"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -1.3053396,
+        53.7774267,
+        -0.8307918999999999,
+        54.14502060000001
+      ],
+      "id": "waterways",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_waterways_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "waterways"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.241003900000002,
+        53.81939610000001,
+        -0.8982027999999928,
+        54.05952659999999
+      ],
+      "id": "water",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_water_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "water"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -1.2289243,
+        53.8724879,
+        -0.9001808999999997,
+        54.049303000000016
+      ],
+      "id": "natural",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_natural_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "natural"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.2222031999999998,
+        53.8696868,
+        -0.9143564999999998,
+        54.04052260000001
+      ],
+      "id": "traffic",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_traffic_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "traffic"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.2285976999999997,
+        53.86985430000001,
+        -0.8994991,
+        54.06023960000001
+      ],
+      "id": "buildingsnew",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_buildings_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildingsnew"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -1.2650243,
+        53.8440072,
+        -0.8555205999999999,
+        54.0730404
+      ],
+      "id": "roads-outline",
+      "class": "roads line",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_roads_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads-outline"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -1.2650243,
+        53.8440072,
+        -0.8555205999999999,
+        54.0730404
+      ],
+      "id": "roads-fill",
+      "class": "roads fill",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_roads_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads-fill"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -2.5969883000000085,
+        53.6164361,
+        -0.19240199999999488,
+        54.66677250000001
+      ],
+      "id": "road-labels",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_roads_free_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "road-labels"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -1.2650243,
+        53.8440072,
+        -0.8555205999999999,
+        54.0730404
+      ],
+      "id": "bridges-outline",
+      "class": "bridges line",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_roads_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bridges-outline"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -1.2650243,
+        53.8440072,
+        -0.8555205999999999,
+        54.0730404
+      ],
+      "id": "bridges-fill",
+      "class": "bridges fill",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_roads_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bridges-fill"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -1.2231550999999998,
+        53.87342769999998,
+        -0.9049981,
+        54.05980050000001
+      ],
+      "id": "traffic-points",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_traffic_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "traffic-points"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -2.5647683000000105,
+        53.6435114,
+        -0.23956639999999066,
+        54.636762100000006
+      ],
+      "id": "places",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_places_free_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "places"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -1.2285053602727483,
+        53.871975000000006,
+        -0.9029399999999999,
+        54.0597404
+      ],
+      "id": "points",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_pois_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "points"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -5.8269423,
+        50.1529279,
+        3.1896647,
+        58.644654
+      ],
+      "id": "transport",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_transport_free_1.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "transport"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.1175981999999998,
+        53.940293999999994,
+        -1.0120903,
+        54.017058999999996
+      ],
+      "id": "places-areas",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_places_a_07_1.formatted.shp",
+        "id": "places-areas",
+        "project": "York-replacement",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "places-areas"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.2285976999999997,
+        53.86985430000001,
+        -0.8994991,
+        54.06023960000001
+      ],
+      "id": "buildings-missing",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_buildings_a_07_1.formatted.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildings-missing"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -1.2285976999999997,
+        53.86985430000001,
+        -0.8994991,
+        54.06023960000001
+      ],
+      "id": "building-labels-new",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_buildings_a_07_1.formatted.shp",
+        "id": "building-labels-new",
+        "project": "York-replacement",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "building-labels-new"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -1.054001,
+        53.946741,
+        -1.054001,
+        53.946741
+      ],
+      "id": "campus-labels",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/outline-labels.csv",
+        "id": "campus-labels",
+        "project": "York-replacement",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "campus-labels"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "York (replacement)",
+  "description": "rebuilding because current project seems to be messed up",
+  "attribution": ""
+}
