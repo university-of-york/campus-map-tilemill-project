@@ -222,6 +222,28 @@
       "name": "road-labels"
     },
     {
+      "geometry": "polygon",
+      "extent": [
+        -1.2222031999999998,
+        53.8696868,
+        -0.9143564999999998,
+        54.04052260000001
+      ],
+      "id": "traffic-labels",
+      "class": "",
+      "Datasource": {
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_traffic_a_07_1.formatted.shp",
+        "id": "traffic-labels",
+        "project": "York-replacement",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "traffic-labels"
+    },
+    {
       "geometry": "linestring",
       "extent": [
         -1.2650243,
@@ -270,7 +292,10 @@
       "id": "traffic-points",
       "class": "",
       "Datasource": {
-        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_traffic_07_1.formatted.shp"
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_traffic_07_1.formatted.shp",
+        "id": "traffic-points",
+        "project": "York-replacement",
+        "srs": ""
       },
       "layer": null,
       "srs-name": "autodetect",
@@ -327,7 +352,10 @@
       "id": "transport",
       "class": "",
       "Datasource": {
-        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_transport_free_1.shp"
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_transport_free_1.shp",
+        "id": "transport",
+        "project": "York-replacement",
+        "srs": ""
       },
       "layer": null,
       "srs-name": "autodetect",
@@ -368,7 +396,10 @@
       "id": "buildings-missing",
       "class": "",
       "Datasource": {
-        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_buildings_a_07_1.formatted.shp"
+        "file": "/Volumes/commsoff/Ongoing/Map (online)/map data/gis.osm_buildings_a_07_1.formatted.shp",
+        "id": "buildings-missing",
+        "project": "York-replacement",
+        "srs": ""
       },
       "layer": null,
       "srs-name": "autodetect",

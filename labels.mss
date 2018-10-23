@@ -39,69 +39,69 @@
     text-name:"[name]";
     text-fill:#444;
     text-halo-fill:#fff;
-  
+
   }
   [fclass='service'][zoom>=18]{
     text-name:"[name]";
     text-fill:#444;
     text-halo-fill:#fff;
   }
-   
-  
+
+
 }
 
 
 #traffic-points::busesonly[osm_id="566366386"][zoom>=16]{
-  
-   text-allow-overlap:true; 
+
+   text-allow-overlap:true;
     text-face-name:@font_reg;
-    
+
     text-fill:#138bb7;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-    text-name:"'Buses only'"; 
-   //text-name:"[osm_id]"; 
-    text-size:10; 
+    text-name:"'Buses only'";
+   //text-name:"[osm_id]";
+    text-size:10;
    	[zoom>=17] {
-      	text-size:11; 
+      	text-size:11;
       }
   }
- 
+
 #traffic-points::busesonly[osm_id="3561854327"][zoom>=16]{
 
-   text-allow-overlap:true; 
+   text-allow-overlap:true;
     text-face-name:@font_reg;
-    
+
     text-fill:#138bb7;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-  text-name:"'Permit holders only'"; 
-  // text-name:"[osm_id]"; 
-    text-size:10; 
+  text-name:"'Permit holders only'";
+  // text-name:"[osm_id]";
+    text-size:10;
   	[zoom>=17] {
-      	text-name:"'Annual Car Park Permit holders only'"; 
-    	text-size:11; 
+      	text-name:"'Annual Car Park Permit holders only'";
+    	text-size:11;
      	text-wrap-width:45;
       }
-   
+
   }
  /*#traffic-points::IDS[zoom>=16]{
 
-   text-allow-overlap:true; 
+   text-allow-overlap:true;
     text-face-name:@font_reg;
-    
+
     text-fill:#138bb7;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-  
-   text-name:"[osm_id]"; 
-    text-size:10; 
+
+   text-name:"[osm_id]";
+    text-size:10;
   	[zoom>=17] {
-      	 text-name:"[osm_id]"; 
-    	text-size:11; 
+      	 text-name:"[osm_id]";
+    	text-size:11;
      	text-wrap-width:45;
       }
-   
+
   }*/
 
 
@@ -115,32 +115,53 @@
 
 
 #places-areas [zoom>17]{
-  text-allow-overlap:false; 
+  text-allow-overlap:false;
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#000;
   text-halo-fill:rgba(255,255,255,0.5);
   text-halo-radius:2;
-  
-  text-size:10; 
+
+  text-size:10;
   text-wrap-width:70;
 
 }
 
+/*Manual replacement for Greg’s Place - change made on OSM on 2018-06-20*/
+#places-areas[name="Vanbrugh Paradise / Piazza"] {
+     [zoom>=17]
+     {
+    text-name:"'Greg\'s Place'";
+    text-allow-overlap:false;
+    text-face-name:@font_reg;
+    text-fill:#000;
+    text-halo-fill:rgba(255,255,255,0.5);
+    text-halo-radius:2;
+    text-size:10;
+    text-wrap-width:20;
+  }
+  [zoom=18]
+    {
+    text-size:11;
+    text-wrap-width:50;
+    }
+}
+
+
 #building-labels-new[zoom>16], #landuse[fclass='brownfield'][zoom>16],#landuse[zoom>16][fclass='construction']{
-  text-allow-overlap:false; 
+  text-allow-overlap:false;
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#000;
   text-halo-fill:rgba(255,255,255,0.5);
   text-halo-radius:2;
-  text-size:10; 
+  text-size:10;
   text-wrap-width:60;
 
 }
 
 #building-labels-new[zoom>17] {
-  text-size:11; 
+  text-size:11;
 }
 
 /*Example of a 'main' building to show at lower zoom levels*/
@@ -148,13 +169,13 @@
   [name="Central Hall"],
   [name="Heslington Hall"],
     {
-    text-allow-overlap:false; 
+    text-allow-overlap:false;
     text-face-name:@font_reg;
     text-name:"[name]";
     text-fill:#000;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-    text-size:11; 
+    text-size:11;
     text-wrap-width:100;
   }
 }
@@ -172,32 +193,32 @@
     [name="Eden's Court"],
 
      {
-    text-allow-overlap:true; 
+    text-allow-overlap:true;
     text-face-name:@font_reg;
     text-name:"[name]";
     text-fill:#000;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-    text-size:11; 
-    
+    text-size:11;
+
     text-wrap-width:100;
   }
-  
+
 }
 
 #places-areas[zoom>=17] {
      [name="Astrocampus"],
      {
-    text-allow-overlap:true; 
+    text-allow-overlap:true;
     text-face-name:@font_reg;
     text-name:"[name]";
     text-fill:#000;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-    text-size:11; 
+    text-size:11;
     text-wrap-width:100;
   }
-  
+
 }
 
 #places-areas[zoom>=17] {
@@ -211,15 +232,15 @@
   [name="Vanbrugh College"],
   [name="Wentworth College"],
     [name="Eden's Court"],
- 
+
      {
-   text-fill:#333; 
+   text-fill:#333;
     text-halo-fill:rgba(255,255,255,0.4);
-    text-size:12; 
-    text-transform:uppercase; 
-    text-character-spacing:5; 
+    text-size:12;
+    text-transform:uppercase;
+    text-character-spacing:5;
   }
-  
+
 }
 
 
@@ -233,29 +254,29 @@
   [name="Langwith College"],
   [name="Vanbrugh College"],
   [name="Wentworth College"],
-    
+
      {
-  
-    text-size:16; 
-      text-character-spacing:10; 
-  
+
+    text-size:16;
+      text-character-spacing:10;
+
   }
-  	
-  
+
+
 }
 
 /*Manual adjustment to stop label collision with Z Block*/
 #building-labels-new[zoom=18] {
   [name="Electronic Engineering"]
-     { 
+     {
     text-dy:-15;
-  }  
+  }
 }
 
 /*Excluded place labels*/
 #places-areas {
   [name="University of York: Heslington East Campus"],
-  [name="Vanbrugh College (New Blocks)"],   
+  [name="Vanbrugh College (New Blocks)"],
     {
      text-name:"''";
   	}
@@ -278,8 +299,10 @@
   [name="Data Centre"],
   [name="Robot Lab"],
   [name="York University Baird Lane Sewage Pumping Statio"],
-    
-    
+  [name="Berrick Saul Substation"],
+  [name="Derwent College Substation"],
+
+
     	{
     		 text-name:"''";
     	}
@@ -312,89 +335,41 @@
 /*-------Car parks-------*/
 
 
-#traffic-points::text[fclass="parking"] [zoom>17]{
-  text-allow-overlap:true; 
+#traffic-labels::labels[zoom>=17][fclass='parking'] {
+  text-allow-overlap:true;
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#333;
   text-halo-fill:rgba(255,255,255,0.5);
   text-halo-radius:2;
-  
-  text-size:10; 
+
+  text-size:10;
   text-wrap-width:70;
-  
-  
+
+
   [name="Langwith Reception"] {   text-name:"''"; 	}
   [name="Biology Two Cart Park"] {   text-name:"'Biology Two Car Park'"; 	}
-  
+  [osm_id="1933013150"] {text-name:"''"}
   }
 
-/*
-#traffic-points::icons {
-  [fclass='parking'], [fclass='parking_site'] {
-   
-    
 
-	[zoom=16] {
-      	[name='Campus Central Car Park'],[name='Information Centre Car Park'],[name='Campus North'],[name='Car Park G'],[name='Campus South Car Park'],[name='Campus West'],[name='Field Lane Car Park'],[name='Kimberlow Lane Car Park']{
-  		
-        point-file:url('icons/parking-18.png');
-        
-        }
- 	 }
- 	 [zoom=17] {
-  		point-file:url(icons/parking-18.png); 
- 	 }
- 	 [zoom=18] {
-  		
-
-      	/shield-file:url('icons/parking-24.png'); 
-        shield-face-name:@font_reg;
-      	shield-dy:-10; 
-      	
- 	 }
-
-    
-    	
-	}
-}*/
-
-
-
-
-/*-------Bus stops-------*/
-/*Removed because we’re now showing bus stops as pins*/
-  /*
-#transport[fclass='bus_stop']{
-[zoom=16] {
-  	point-file:url(../maki/bus-12.png); 
-  }
-  [zoom=17] {
-  	point-file:url('icons/bus-blue-12.png'); 
-  }
-  [zoom=18] {
-  	point-file:url('icons/bus-blue-18.png'); 
-  }
-
-}
-*/
 
 
 /*Missing labels for biology and physics*/
 
 
 #buildingsnew::missing[zoom>16] {
-  text-name:"''"; 
+  text-name:"''";
   /*Use osm_id as the value of text-name to see the ID of the building*/
   /*text-name:"[osm_id]"; */
-  text-allow-overlap:true; 
+  text-allow-overlap:true;
   text-face-name:@font_reg;
   text-fill:#000;
   text-halo-fill:rgba(255,255,255,0.5);
   text-halo-radius:2;
-  text-size:10; 
+  text-size:10;
   text-wrap-width:60;
-  
+
   [osm_id=933949]{ 	text-name:"'Department of Biology'";  }
   [osm_id=2371619]{ text-name:"'Physics'"; }
 }
@@ -406,13 +381,13 @@
     [osm_id='88112328'] /*Railway station - appears as ‘York'*/
     {
     	[zoom<=16] {
-		  text-allow-overlap:false; 
+		  text-allow-overlap:false;
           text-face-name:@font_reg;
           text-name:"[name]";
           text-fill:#000;
           text-halo-fill:rgba(255,255,255,0.5);
           text-halo-radius:2;
-          text-size:10; 
+          text-size:10;
           text-wrap-width:20;
     }
   }
@@ -425,13 +400,13 @@
 
 /*Villages*/
 #places[fclass='village'] {
-  text-allow-overlap:false; 
+  text-allow-overlap:false;
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#000;
   text-halo-fill:rgba(255,255,255,0.5);
   text-halo-radius:2;
-  text-size:10; 
+  text-size:10;
   text-wrap-width:70;
 }
 
@@ -439,12 +414,12 @@
 
 #campus-labels{
   text-face-name:@font_serif;
-  text-allow-overlap:true; 
+  text-allow-overlap:true;
   text-name:"[Name]";
   text-fill:#000;
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
-  text-size:12; 
+  text-size:12;
 
 }
 #campus-labels[zoom=14] {
@@ -478,18 +453,18 @@
 
 
 #points[fclass='university'][name="University of York Kings Manor"]{
-  
-    text-allow-overlap:true; 
+
+    text-allow-overlap:true;
     text-face-name:@font_reg;
     text-name:"'King‘s Manor'";
     text-fill:#000;
     text-halo-fill:rgba(255,255,255,0.8);
     text-halo-radius:2;
-    text-size:11; 
+    text-size:11;
     text-wrap-width:100;
   [zoom<=16] {
     text-wrap-width:25;
-        text-size:10; 
+        text-size:10;
     }
   [zoom>=17] {
     text-name:"''";
@@ -497,19 +472,20 @@
   }
 
 
+
 /*Debug - show ID*/
 /*
-#building-labels-new[zoom>=15] {
-		  text-allow-overlap:true; 
+#traffic-points[zoom>=15] {
+		  text-allow-overlap:true;
           text-face-name:@font_reg;
-          text-name:"[name]";
+//          text-name:"[name]";
+          text-name:"[osm_id]";
 
-          text-fill:#f00; 
+          text-fill:#f00;
           text-halo-fill:rgba(255,255,255,0.5);
           text-halo-radius:2;
-          text-size:10; 
+          text-size:10;
           text-wrap-width:70;
-  
+
 }
 */
-                                                                                                                                                                                                                                                                                                                                                              
